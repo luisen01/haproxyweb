@@ -30,7 +30,7 @@ pipeline {
         }
         stage ('Run Docker'){
             steps{
-                sh 'docker run -d -p 9091:80 ${registry}'
+                sh 'docker run -d -p 9091:80 --name apache2 ${registry}'
             }
         }
     }
