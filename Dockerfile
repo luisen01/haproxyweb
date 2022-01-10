@@ -1,1 +1,2 @@
-from ubuntu
+FROM ubuntu
+EXPOSE 9090
