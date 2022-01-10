@@ -30,6 +30,8 @@ pipeline {
         }
         stage ('Run Docker'){
             steps{
+                sh 'docker stop apache2'
+                sh 'docker rm apache2'
                 sh 'docker run -d -p 9091:80 --name apache2 ${registry}'
             }
         }
