@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         dockerfilePath= "/opt/haproxyweb/"
-        registry = "luisen01/jenkins"
+        registry = "luisen01/haproxyweb"
         registryCredential = 'dockerhub_id'
     }
     stages {
