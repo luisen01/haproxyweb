@@ -1,6 +1,9 @@
-pipeline {
-    agent any
-
+pipeline{
+  agent {
+    node{    
+      label 'VPS'
+      }
+  }
     environment {
         dockerfilePath= "/opt/haproxyweb/"
         registry = "luisen01/haproxyweb"
