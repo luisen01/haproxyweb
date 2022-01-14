@@ -1,2 +1,2 @@
-FROM ubuntu
+FROM httpd
 EXPOSE 9090
