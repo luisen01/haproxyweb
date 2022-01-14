@@ -1,2 +1,1 @@
 FROM httpd
-EXPOSE 9090
